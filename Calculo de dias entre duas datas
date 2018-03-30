@@ -1,0 +1,18 @@
+function calculardiferencadata(){
+    //Variaveis
+    var data1,data2,Tempo,Dias;
+    //Declaração das variaveis passando como função a bliblioteca Date, para que seja utilizado a data
+    data1 = new Date(document.getElementById('hora1').value);
+    data2 = new Date(document.getElementById('hora2').value);
+    
+    //A função Math.abs é uma função que retorna o valor absoluto do calculo das datas
+    //A função getTime Calcula os milissegundos da data
+    Tempo = Math.abs(data2.getTime() - data1.getTime());
+    //Retorna o numero Inteiro
+    // Valor do dia em Millissegundos (24 Horas * 1 hora em minutos * 1000 segundos) 
+    Dias = parseInt((Tempo)/(24*3600*1000));
+    
+    //Repassando o valor para a div 
+    document.getElementById('Resultado').innerHTML = Dias;
+
+}
