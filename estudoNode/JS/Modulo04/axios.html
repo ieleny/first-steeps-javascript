@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Curso em Javascript</title>
+  </head>
+  <body>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+      //Assincrona
+      axios
+        .get("https://api.github.com/users/diego3g")
+        .then(function(response) {
+          console.log(response);
+        })
+        .catch(function(error) {
+          console.log(error);
+        });
+    </script>
+  </body>
+</html>

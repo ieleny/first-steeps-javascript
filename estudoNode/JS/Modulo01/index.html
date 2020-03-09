@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <title>Curso em Javascript</title>
+  </head>
+  <body>
+    <script>
+      //Variaveis
+      var nome = "";
+      var alunos = ["Diego"];
+      //Objeto
+      var alunos = {
+        nome: "Ieleny",
+        idade: 25
+      };
+      console.log(alunos);
+      //Operações matematicas
+      var x = 10,
+        y = 5;
+
+      //Soma
+      var resultado = x + y;
+      //DIVISÃO
+      var resultado = x / y;
+      //MODULO
+      var resultado = x % y;
+      //Multiplicacao
+      var resultado = x * y;
+      //Incremento
+      x += 3;
+
+      //Funções
+      function soma(numero1, numero2) {
+        var resultado = numero1 + numero2;
+        return resultado;
+      }
+
+      soma(1, 5);
+
+      //Condições
+      function retornaSexo(sexo) {
+        if (sexo == "M") {
+          return "Masculino";
+        } else {
+          return "Feminino";
+        }
+
+        switch (sexo) {
+          case "M":
+            return "Masculino";
+        }
+      }
+
+      //Operadores Logicos  - && || !=
+      var masculino = sexo === "M";
+
+      //ternário
+      return (retorno = sexo === "M" ? "Masculino" : "Feminino");
+
+      //Loop
+      for (var i = 0; i <= 100; i++) {
+        console.log(i);
+      }
+      var j = 0;
+      while (j <= 100) {
+        console.log(j);
+        j++;
+      }
+
+      //Interval
+      function exibeAlgo() {
+        console.log("Hello Wordl");
+      }
+
+      setInterval(exibeAlgo, 1000);
+      //TimeOut
+      setTimeout(exibeAlgo, 1000);
+    </script>
+  </body>
+</html>

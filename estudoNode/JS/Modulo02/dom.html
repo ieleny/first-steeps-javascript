@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Curso em Javascript</title>
+  </head>
+  <body>
+    <div id="app">
+      <button onclick="mostraAlerta()">Me Pressione</button>
+      <input type="text" name="nome" id="nome" />
+      <button class="botao">Adicionar</button>
+    </div>
+    <script>
+      function mostraAlerta() {
+        alert("Botão foi clicado");
+      }
+
+      var inputElement = document.getElementById("nome");
+      var inputElement = document.getElementsByTagName("nome");
+      var inputElement = document.getElementsByClassName("nome");
+      var inputElement = document.querySelector("div#app input");
+      var inputElement = document.querySelectorAll("input");
+
+      var btnElement = document.querySelector("button.botao");
+      btnElement.onclick = function() {
+        var text = inputElement.value;
+        alert("Botao Clicado");
+      };
+
+      console.log(inputElement);
+    </script>
+  </body>
+</html>
